@@ -1,5 +1,5 @@
 # mechanical
 
-123
+1
 
 [link](Analysis_of_structures.md)
