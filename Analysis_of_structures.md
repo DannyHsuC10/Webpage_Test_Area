@@ -3,7 +3,7 @@ layout: base
 math: true
 ---
 
-# Analysis of structures1
+# Analysis of structures2
 
 ## Stable structure analysis
 
