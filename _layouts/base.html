@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- GitHub README 樣式 -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+
   <link rel="stylesheet" href="/assets/css/custom.css">
 
   <title>{{ page.title }}</title>
@@ -22,8 +26,11 @@
 </head>
 
 <body>
-  <article class="markdown-body">
+
+  <!-- 只讓 markdown 吃 README 樣式 -->
+  <div class="markdown-body content">
     {{ content }}
-  </article>
+  </div>
+
 </body>
 </html>
