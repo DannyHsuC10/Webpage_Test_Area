@@ -1,5 +1,3 @@
----
-layout: my_layout
-math: true
----
 # mechanical
+123
+[link](Analysis_of_structures.md)
