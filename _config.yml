@@ -1,6 +1,0 @@
-# _config.yml
-remote_theme: jekyll-theme-Cayman
-plugins:
-  - jekyll-seo-tag
-  - jekyll-remote-theme
-math: true
