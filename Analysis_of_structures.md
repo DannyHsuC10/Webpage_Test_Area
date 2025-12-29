@@ -3,8 +3,8 @@ layout: base
 math: true
 ---
 
-# Analysis of structures
-1
+# Analysis of structures1
+
 ## Stable structure analysis
 
 One truss with two joint
