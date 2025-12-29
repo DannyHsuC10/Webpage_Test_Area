@@ -1,5 +1,5 @@
 ---
-layout: my_layout
+layout: base
 math: true
 ---
 
