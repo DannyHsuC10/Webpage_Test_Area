@@ -1,3 +1,7 @@
+---
+layout: my_layout
+math: true
+---
 # mechanical
 
 # Analysis of structures
