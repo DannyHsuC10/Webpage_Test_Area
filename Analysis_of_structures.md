@@ -1,3 +1,7 @@
+---
+layout: base
+math: true
+---
 
 # Analysis of structures2
 
