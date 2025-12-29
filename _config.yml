@@ -1,16 +1,1 @@
-# 基本設定
-title: Mechanics
-description: Mechanical Notes
-baseurl: ""   # 如果你的 GitHub Pages 是 username.github.io/repo-name，填 /repo-name
-url: "https://DannyHsuC10.github.io"
-
-# 主題設定
 theme: theme: jekyll-theme-hacker
-
-# 自訂插件
-plugins:
-  - jekyll-seo-tag
-  - jekyll-remote-theme  # 如果用 remote_theme
-
-# MathJax 支援
-math: true
