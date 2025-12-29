@@ -1,18 +1,12 @@
----
-layout: null
----
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/custom.css">
 
   <title>{% if page.title %}{{ page.title }}{% endif %}</title>
 
-  <!-- Your CSS -->
-  <link rel="stylesheet" href="/assets/css/custom.css">
-
-  <!-- MathJax -->
   {% if page.math %}
   <script>
     window.MathJax = {
@@ -27,7 +21,7 @@ layout: null
 </head>
 
 <body>
-  <main>
+  <main class="markdown-body">
     {{ content }}
   </main>
 </body>
