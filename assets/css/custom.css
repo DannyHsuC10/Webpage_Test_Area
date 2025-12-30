@@ -25,9 +25,17 @@ body {
 }
 
 /* 外層開頭、結尾 */
-.page-intro,
-.page-end {
+.page-intro,{
   background-color: #c0c2c4; /* 淺灰色例子 */
+  max-width: 1100px;          /* 與內容框同寬 */
+  margin: 2rem auto;         /* 上下外距 + 置中 */
+  padding: 1rem 2.5rem;      /* 內距 */
+  background-color: ##909191; /* 背景色 */
+  border-radius: 6px;        /* 可選圓角 */
+}
+
+.page-end {
+  background-color: #f6f8fa; /* 淺灰色例子 */
   max-width: 1100px;          /* 與內容框同寬 */
   margin: 2rem auto;         /* 上下外距 + 置中 */
   padding: 1rem 2.5rem;      /* 內距 */
