@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <title>{{ page.title }}</title>
 </head>
 
 <body>
-
   <article class="markdown-body">
     {{ content }}
   </article>
-
 </body>
 </html>
