@@ -14,9 +14,9 @@ body {
 
 /* ===== README Card ===== */
 .content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem auto;
-  padding: 2.5rem 2.5rem;
+  padding: 2rem 2rem;
   background: #fff;
   border: 1px solid #d0d7de;
   border-radius: 6px;
