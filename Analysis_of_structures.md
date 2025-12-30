@@ -2,7 +2,7 @@
 layout: base
 ---
 
-# Analysis of structures2
+# Analysis of structures1
 
 ## Stable structure analysis
 
