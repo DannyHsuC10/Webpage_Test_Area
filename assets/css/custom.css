@@ -55,10 +55,10 @@ body {
 /* 小框框內容 */
 .content {
   max-width: 900px;
-  margin: 2rem auto;         /* 上下外距 + 置中 */
+  margin: 0.1rem auto 2rem; /* 上 0.5rem，下 2rem */
   padding: 2rem 2.5rem;      /* 內距 */
   background: #f6f8fa;
-  border: 1px solid #d0d7de;
+  border: none;
   border-radius: 6px;
 }
 /* ====================================================== md細節文字設定============================================ */
