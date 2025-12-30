@@ -1,5 +1,8 @@
+---
+layout: base
+---
 
-# Analysis of structures
+# Analysis of structures2
 
 ## Stable structure analysis
 
