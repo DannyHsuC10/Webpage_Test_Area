@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/custom.css">
   <title>{{ page.title }}</title>
 
-    <!-- MathJax -->
+  <!-- MathJax -->
   <script>
     window.MathJax = {
       tex: {
@@ -17,16 +17,35 @@
   <script defer
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-
-  
 </head>
 
 <body>
 
   <div class="content">
+
+    <!-- ===== 開頭段 ===== -->
+    <section class="page-intro">
+      <h1 class="page-title">{{ page.title }}</h1>
+
+      {% if page.description %}
+        <p class="page-description">{{ page.description }}</p>
+      {% endif %}
+    </section>
+
+    <!-- ===== Markdown 內容 ===== -->
     <article class="markdown-body">
       {{ content }}
     </article>
+
+    <!-- ===== 結尾段 ===== -->
+    <section class="page-outro">
+      <hr>
+      <p class="page-footer">
+        © {{ site.time | date: "%Y" }} · Notes by {{ site.author | default: "Danny" }}
+      </p>
+    </section>
+
   </div>
 
 </body>
+</html>
