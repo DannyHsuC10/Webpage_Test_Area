@@ -35,12 +35,22 @@ body {
 }
 
 .page-end {
-  margin: 2rem auto;
-  padding: 1rem 2.5rem;
+  margin: 3rem auto 2rem;
   text-align: center;
-  color: #ffffff;
-  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #57606a;
 }
+
+.page-end a {
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-end a:hover {
+  text-decoration: underline;
+}
+
 
 /* 小框框內容 */
 .content {
