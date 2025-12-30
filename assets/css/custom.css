@@ -40,7 +40,7 @@ body {
   max-width: 900px;
   margin: 2rem auto;         /* 上下外距 + 置中 */
   padding: 2rem 2.5rem;      /* 內距 */
-  background: #fff;
+  background: #f6f8fa;
   border: 1px solid #d0d7de;
   border-radius: 6px;
 }
