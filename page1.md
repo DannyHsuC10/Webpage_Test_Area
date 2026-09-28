@@ -2,9 +2,9 @@
 layout: base
 ---
 
-# Analysis of structures1
+# Title
 
-## Stable structure analysis
+## Subtitle
 
 One truss with two joint
 
