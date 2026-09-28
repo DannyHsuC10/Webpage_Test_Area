@@ -11,21 +11,20 @@ One truss with two joint
 $$F = ma$$
 
 <section class="calculator" aria-labelledby="force-calculator-title">
-  <h3 id="force-calculator-title">Force Calculator</h3>
 
   <div class="calculator-grid">
     <label>
-      Mass, m
-      <input id="mass-input" type="number" step="any" placeholder="kg">
+      m
+      <input id="mass-input" type="number" placeholder="kg">
     </label>
 
     <label>
-      Acceleration, a
-      <input id="acceleration-input" type="number" step="any" placeholder="m/s^2">
+      a
+      <input id="acceleration-input" type="number" placeholder="m/s^2">
     </label>
 
     <label>
-      Force, F
+      F
       <input id="force-output" type="text" readonly placeholder="N">
     </label>
   </div>
