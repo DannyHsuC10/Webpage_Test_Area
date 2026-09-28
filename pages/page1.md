@@ -15,12 +15,12 @@ $$F = ma$$
   <div class="calculator-grid">
     <label>
       m
-      <input id="mass-input" type="number" placeholder="kg">
+      <input id="mass-input" type="text" placeholder="kg">
     </label>
 
     <label>
       a
-      <input id="acceleration-input" type="number" placeholder="m/s^2">
+      <input id="acceleration-input" type="text" placeholder="m/s^2">
     </label>
 
     <label>
