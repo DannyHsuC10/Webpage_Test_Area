@@ -3,4 +3,4 @@
 
 111
 
-[link](page1.md)
+[link](pages/page1.md)
