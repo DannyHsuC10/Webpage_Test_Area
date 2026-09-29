@@ -56,7 +56,7 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 720px) 190px;
+  grid-template-columns: minmax(0, 600px) 190px;
   gap: 30px;
   align-items: start;
 }
