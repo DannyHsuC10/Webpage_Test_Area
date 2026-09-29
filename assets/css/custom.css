@@ -24,6 +24,10 @@ body {
   margin: 0 auto;
 }
 
+.content-wrapper .inner {
+  width: 1120px;
+}
+
 .page-header {
   min-height: 150px;
   padding: 34px 0 30px;
@@ -55,18 +59,22 @@ body {
 }
 
 .page-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 600px) 190px;
-  gap: 30px;
-  align-items: start;
+  position: relative;
 }
 
 .markdown-body {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
   min-width: 0;
   color: #373737;
 }
 
 .sidebar {
+  position: absolute;
+  top: 0;
+  left: calc(50% + 390px);
+  width: 190px;
   padding: 14px;
   background: #f8f8f8;
   border: 1px solid #d8d8d8;
@@ -280,11 +288,13 @@ body {
   }
 
   .page-layout {
-    grid-template-columns: 1fr;
+    display: grid;
     gap: 22px;
   }
 
   .sidebar {
+    position: static;
+    width: auto;
     order: 2;
   }
 
