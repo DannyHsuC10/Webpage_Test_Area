@@ -1,7 +1,3 @@
----
-layout: base
----
-
 # Webpage Test Area
 ## 123
 

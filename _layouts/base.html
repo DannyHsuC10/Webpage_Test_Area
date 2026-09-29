@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: site.title | default: 'Danny' }}</title>
 
   <!-- MathJax -->
   <script>
@@ -21,29 +22,25 @@
 </head>
 
 <body>
-
-  <!-- ===== 開頭段 (在外層容器外) ===== -->
-  <header class="page-intro">
-    <h1 class="page-title">Danny</h1>
+  <header class="page-header">
+    <div class="inner">
+      <h1 class="page-title">{{ site.title | default: 'Danny' }}</h1>
+      <p class="page-tagline">{{ site.description | default: 'GitHub Pages test area' }}</p>
+    </div>
   </header>
 
-  <!-- ===== 內容區塊 (小框框) ===== -->
-  <div class="content">
-    <main id="content" class="markdown-body">
-      {{ content }}
-    </main>
+  <div class="content-wrapper">
+    <div class="inner">
+      <main id="content" class="markdown-body">
+        {{ content }}
+      </main>
+    </div>
   </div>
 
-  <!-- ===== 結尾段 (在外層容器外) ===== -->
   <footer class="page-end">
-    <p>
+    <div class="inner">
       ← <a href="{{ '/' | relative_url }}">Back to HOME</a>
-    </p>
+    </div>
   </footer>
-
-
 </body>
-
 </html>
-
-
