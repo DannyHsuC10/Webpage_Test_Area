@@ -31,4 +31,13 @@ $$W = mg$$
   data-unit="N">
 </div>
 
+$$a = sin b$$
+
+<div
+  data-calculator
+  data-expression="sin(b)"
+  data-inputs="b:rad"
+  data-result="a">
+</div>
+
 [Download code](code_matlab.m)

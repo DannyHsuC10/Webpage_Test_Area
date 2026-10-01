@@ -5,6 +5,8 @@
 
 [link](pages/page1.md)
 
+[Webpage test package guide](docs/webpage-test-package.md)
+
 ## Calculator usage
 
 Use this marker in any Markdown page:
@@ -28,6 +30,18 @@ Supported expression operators:
 - `^`
 - `()`
 
+Supported functions:
+
+- `sin(x)`
+- `cos(x)`
+- `tan(x)`
+- `arcsin(x)` or `asin(x)`
+- `arccos(x)` or `acos(x)`
+- `arctan(x)` or `atan(x)`
+- `ln(x)`
+
+Trigonometric functions use radians.
+
 Example with a constant:
 
 ```html
@@ -50,5 +64,28 @@ Example with an exponent:
   data-inputs="k:N/m,x:m"
   data-result="E"
   data-unit="J">
+</div>
+```
+
+Example with a trigonometric function:
+
+```html
+<div
+  data-calculator
+  data-expression="L * sin(theta)"
+  data-inputs="L:m,theta:rad"
+  data-result="height"
+  data-unit="m">
+</div>
+```
+
+Example with `ln`:
+
+```html
+<div
+  data-calculator
+  data-expression="ln(x)"
+  data-inputs="x"
+  data-result="ln(x)">
 </div>
 ```

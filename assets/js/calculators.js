@@ -6,6 +6,19 @@ const OPERATORS = {
   "^": { precedence: 3, associativity: "right", apply: (a, b) => a ** b }
 };
 
+const FUNCTIONS = {
+  sin: Math.sin,
+  cos: Math.cos,
+  tan: Math.tan,
+  arcsin: Math.asin,
+  arccos: Math.acos,
+  arctan: Math.atan,
+  asin: Math.asin,
+  acos: Math.acos,
+  atan: Math.atan,
+  ln: Math.log
+};
+
 function splitList(value) {
   return (value || "")
     .split(",")
@@ -66,9 +79,16 @@ function tokenize(expression) {
 
     if (/[A-Za-z_]/.test(char)) {
       const match = expression.slice(index).match(/^[A-Za-z_][A-Za-z0-9_]*/);
-      tokens.push({ type: "identifier", value: match[0] });
-      index += match[0].length;
-      previousType = "identifier";
+      const name = match[0];
+      const nextIndex = index + name.length;
+      const isFunction = expression.slice(nextIndex).trimStart().startsWith("(");
+
+      tokens.push({
+        type: isFunction ? "function" : "identifier",
+        value: name
+      });
+      index += name.length;
+      previousType = isFunction ? "function" : "identifier";
       continue;
     }
 
@@ -103,6 +123,11 @@ function toRpn(tokens) {
   tokens.forEach((token) => {
     if (token.type === "number" || token.type === "identifier") {
       output.push(token);
+      return;
+    }
+
+    if (token.type === "function") {
+      operators.push(token);
       return;
     }
 
@@ -148,6 +173,10 @@ function toRpn(tokens) {
       }
 
       operators.pop();
+
+      if (operators.length > 0 && operators[operators.length - 1].type === "function") {
+        output.push(operators.pop());
+      }
     }
   });
 
@@ -190,6 +219,21 @@ function evaluateRpn(tokens, values) {
       const right = stack.pop();
       const left = stack.pop();
       stack.push(OPERATORS[token.value].apply(left, right));
+      return;
+    }
+
+    if (token.type === "function") {
+      const fn = FUNCTIONS[token.value];
+
+      if (!fn) {
+        throw new Error(`Unsupported function: ${token.value}`);
+      }
+
+      if (stack.length < 1) {
+        throw new Error("Invalid expression.");
+      }
+
+      stack.push(fn(stack.pop()));
     }
   });
 
